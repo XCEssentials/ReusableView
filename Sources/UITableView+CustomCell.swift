@@ -24,5 +24,44 @@
  
  */
 
+import UIKit
+
+//===
+
 public
-protocol CustomCell: Reusable { }
+extension UITableView
+{
+    func register(_ cell: CustomCell.Type)
+    {
+        self.register(cell, forCellReuseIdentifier: cell.reuseIdentifier)
+    }
+    
+    //===
+
+    func checkAndRegister(_ cell: CustomCell.Type) -> Bool
+    {
+        if
+            cell is UITableViewCell.Type
+        {
+            self.register(cell, forCellReuseIdentifier: cell.reuseIdentifier)
+            return true
+        }
+        else
+        {
+            return false
+        }
+    }
+    
+    //===
+
+    func dequeue(
+        _ cell: CustomCell.Type,
+        for indexPath: IndexPath
+        ) -> UITableViewCell
+    {
+        return dequeueReusableCell(
+            withIdentifier: cell.reuseIdentifier,
+            for: indexPath
+        )
+    }
+}

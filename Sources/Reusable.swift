@@ -25,4 +25,20 @@
  */
 
 public
-protocol CustomCell: Reusable { }
+protocol Reusable: class
+{
+    static
+    var reuseIdentifier: String { get }
+}
+
+//===
+
+public
+extension Reusable
+{
+    static
+    var reuseIdentifier: String
+    {
+        return String(reflecting: self)
+    }
+}

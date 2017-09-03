@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4181FB460FCE7D455E814EA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1A08807A19CC3B7E5857DD /* Foundation.framework */; };
+		9421D4141F5C80C3006787B5 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9421D4131F5C80C3006787B5 /* Reusable.swift */; };
+		9421D4161F5C812B006787B5 /* UITableView+CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9421D4151F5C812B006787B5 /* UITableView+CustomCell.swift */; };
+		9421D4181F5C81BB006787B5 /* UICollectionView+CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9421D4171F5C81BB006787B5 /* UICollectionView+CustomCell.swift */; };
+		9421D41A1F5C81F6006787B5 /* UITableViewCell+CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9421D4191F5C81F6006787B5 /* UITableViewCell+CustomCell.swift */; };
+		9421D41C1F5C823B006787B5 /* UICollectionViewCell+CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9421D41B1F5C823B006787B5 /* UICollectionViewCell+CustomCell.swift */; };
 		9C5616791F77ADA69021E124 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A6F9C9650AC2723FBDB86F /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,8 +30,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		46E211255F8B8801902671AE /* Fwk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fwk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46E211255F8B8801902671AE /* Fwk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Fwk.framework; path = XCEReusableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F1A08807A19CC3B7E5857DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9421D4131F5C80C3006787B5 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		9421D4151F5C812B006787B5 /* UITableView+CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+CustomCell.swift"; sourceTree = "<group>"; };
+		9421D4171F5C81BB006787B5 /* UICollectionView+CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+CustomCell.swift"; sourceTree = "<group>"; };
+		9421D4191F5C81F6006787B5 /* UITableViewCell+CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+CustomCell.swift"; sourceTree = "<group>"; };
+		9421D41B1F5C823B006787B5 /* UICollectionViewCell+CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+CustomCell.swift"; sourceTree = "<group>"; };
 		D9A6F9C9650AC2723FBDB86F /* CustomCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,7 +65,7 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = "$local";
+			name = $local;
 			sourceTree = "<group>";
 		};
 		66C697A1BCC507846EABAB5F /* Products */ = {
@@ -69,9 +79,13 @@
 		6821D0A8E6B3DB970F6C705E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				9421D4131F5C80C3006787B5 /* Reusable.swift */,
 				D9A6F9C9650AC2723FBDB86F /* CustomCell.swift */,
+				9421D4151F5C812B006787B5 /* UITableView+CustomCell.swift */,
+				9421D4171F5C81BB006787B5 /* UICollectionView+CustomCell.swift */,
+				9421D4191F5C81F6006787B5 /* UITableViewCell+CustomCell.swift */,
+				9421D41B1F5C823B006787B5 /* UICollectionViewCell+CustomCell.swift */,
 			);
-			name = Sources;
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
 		};
@@ -154,7 +168,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
-			showEnvVarsInLog = 1;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -163,6 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9421D41A1F5C81F6006787B5 /* UITableViewCell+CustomCell.swift in Sources */,
+				9421D41C1F5C823B006787B5 /* UICollectionViewCell+CustomCell.swift in Sources */,
+				9421D4161F5C812B006787B5 /* UITableView+CustomCell.swift in Sources */,
+				9421D4181F5C81BB006787B5 /* UICollectionView+CustomCell.swift in Sources */,
+				9421D4141F5C80C3006787B5 /* Reusable.swift in Sources */,
 				9C5616791F77ADA69021E124 /* CustomCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
