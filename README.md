@@ -1,2 +1,2 @@
-# CustomCell
-Set of helpers for custom cell implementation for UICollectionView and UITableView.
+# ReusableView
+Set of helpers for reusable views (cells, headers and footers) implementation for UICollectionView and UITableView.

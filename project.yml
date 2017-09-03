@@ -28,9 +28,9 @@ targets:
     - "Sources"
     configurations:
       Debug:
-        PRODUCT_NAME: "XCECustomCell"
+        PRODUCT_NAME: "XCEReusableView"
         IPHONEOS_DEPLOYMENT_TARGET: "8.0"
-        PRODUCT_BUNDLE_IDENTIFIER: "io.XCEssentials.CustomCell"
+        PRODUCT_BUNDLE_IDENTIFIER: "io.XCEssentials.ReusableView"
         INFOPLIST_FILE: "Info/Fwk.plist"
         SDKROOT: "iphoneos"
         TARGETED_DEVICE_FAMILY: "1,2"
@@ -38,9 +38,9 @@ targets:
         SKIP_INSTALL: "YES"
         MTL_ENABLE_DEBUG_INFO: "true"
       Release:
-        PRODUCT_NAME: "XCECustomCell"
+        PRODUCT_NAME: "XCEReusableView"
         IPHONEOS_DEPLOYMENT_TARGET: "8.0"
-        PRODUCT_BUNDLE_IDENTIFIER: "io.XCEssentials.CustomCell"
+        PRODUCT_BUNDLE_IDENTIFIER: "io.XCEssentials.ReusableView"
         INFOPLIST_FILE: "Info/Fwk.plist"
         SDKROOT: "iphoneos"
         TARGETED_DEVICE_FAMILY: "1,2"
