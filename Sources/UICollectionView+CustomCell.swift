@@ -26,7 +26,7 @@
 
 import UIKit
 
-//===
+//---
 
 public
 extension UICollectionView
@@ -37,7 +37,7 @@ extension UICollectionView
         self.register(cell, forCellWithReuseIdentifier: cell.reuseIdentifier)
     }
 
-    //===
+    //---
 
     func dequeue(
         _ cell: CustomCell.Type,

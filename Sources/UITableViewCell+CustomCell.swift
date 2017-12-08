@@ -26,7 +26,7 @@
 
 import UIKit
 
-//===
+//---
 
 public
 extension CustomCell where Self: UITableViewCell
@@ -37,7 +37,7 @@ extension CustomCell where Self: UITableViewCell
         table.register(self, forCellReuseIdentifier: reuseIdentifier)
     }
     
-    //===
+    //---
 
     static
     func dequeue(

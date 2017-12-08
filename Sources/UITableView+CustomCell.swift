@@ -26,7 +26,7 @@
 
 import UIKit
 
-//===
+//---
 
 public
 extension UITableView
@@ -36,7 +36,7 @@ extension UITableView
         self.register(cell, forCellReuseIdentifier: cell.reuseIdentifier)
     }
     
-    //===
+    //---
 
     func checkAndRegister(_ cell: CustomCell.Type) -> Bool
     {
@@ -52,7 +52,7 @@ extension UITableView
         }
     }
     
-    //===
+    //---
 
     func dequeue(
         _ cell: CustomCell.Type,
