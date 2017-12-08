@@ -26,33 +26,18 @@
 
 import UIKit
 
-//===
+//---
 
 public
 extension UICollectionView
 {
-    func register(_ cell: CustomCell.Type)
+    func register<Cell>(_ cell: Cell.Type)
+        where Cell: CustomCell, Cell: UICollectionViewCell
     {
         self.register(cell, forCellWithReuseIdentifier: cell.reuseIdentifier)
     }
-    
-    //===
 
-    func checkAndRegister(_ cell: CustomCell.Type) -> Bool
-    {
-        if
-            cell is UICollectionViewCell.Type
-        {
-            self.register(cell, forCellWithReuseIdentifier: cell.reuseIdentifier)
-            return true
-        }
-        else
-        {
-            return false
-        }
-    }
-    
-    //===
+    //---
 
     func dequeue(
         _ cell: CustomCell.Type,

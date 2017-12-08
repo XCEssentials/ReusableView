@@ -26,7 +26,7 @@
 
 import UIKit
 
-//===
+//---
 
 public
 extension CustomCell where Self: UICollectionViewCell
