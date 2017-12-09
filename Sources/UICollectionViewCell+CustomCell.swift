@@ -32,6 +32,12 @@ public
 extension CustomCell where Self: UICollectionViewCell
 {
     static
+    func from(_ source: UICollectionViewCell) -> Self?
+    {
+        return source as? Self
+    }
+
+    static
     func register(in collection: UICollectionView)
     {
         collection.register(self, forCellWithReuseIdentifier: reuseIdentifier)
