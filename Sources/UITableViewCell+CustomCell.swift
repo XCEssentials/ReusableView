@@ -32,6 +32,12 @@ public
 extension CustomCell where Self: UITableViewCell
 {
     static
+    func from(_ source: UITableViewCell) -> Self?
+    {
+        return source as? Self
+    }
+
+    static
     func register(in table: UITableView)
     {
         table.register(self, forCellReuseIdentifier: reuseIdentifier)
